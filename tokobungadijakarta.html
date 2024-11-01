@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Bunga Jakarta - Alyssa Florist</title>
+    <meta name="description" content="Alyssa Florist adalah toko bunga terbaik yang menyediakan rangkaian bunga segar di Jakarta untuk berbagai acara spesial Anda.">
+    <meta name="keywords" content="Toko Bunga Jakarta, Toko Bunga Alyssa Florist, Bunga Segar, Rangkaian Bunga, Toko Bunga Terbaik Jakarta, Toko Bunga">
+    <link rel="icon" href="https://www.alyssaflorist.com/icon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0; /* Menghapus margin default */
+            overflow-x: hidden; /* Menghilangkan scrollbar horizontal */
+        }
+
+        /* Background animation */
+        .bg-flowers {
+            position: fixed; /* Menggunakan fixed agar tetap di belakang */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('https://tokobungajakarta.alyssaflorist.com/animated-flowers.gif');
+            background-size: cover;
+            opacity: 0.2;
+            animation: fadeIn 15s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.1; }
+            100% { opacity: 0.4; }
+        }
+
+        .flower-img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 25px;
+            margin: 20px 0; /* Menambahkan margin atas dan bawah */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            animation: fadeIn 2s ease-out;
+            z-index: 1; /* Pastikan header di atas background */
+            position: relative; /* Membuatnya relatif untuk bisa digulir */
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #8E24AA;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn-3d {
+            padding: 15px 35px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #D81B60;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px #B71C1C;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-3d:hover {
+            transform: translateY(-5px);
+            background-color: #C2185B;
+            box-shadow: 0 10px #880E4F;
+        }
+
+        .btn-3d:active {
+            transform: translateY(3px);
+            box-shadow: 0 5px #B71C1C;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .header p { font-size: 1em; }
+            .btn-3d { font-size: 1em; padding: 10px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-flowers"></div>
+    <img src="https://tokobungajakarta.alyssaflorist.com/3.jpg" alt="Toko Bunga Jakarta - Alyssa Florist" class="flower-img">
+
+    <div class="header">
+        <h1>Toko Bunga Jakarta</h1>
+        <p>
+            Alyssa Florist menyediakan rangkaian bunga segar dan indah untuk berbagai acara. Kunjungi kami untuk pengalaman berbelanja yang menyenangkan.
+        </p>
+        <a href="https://www.alyssaflorist.com" class="btn-3d">Kunjungi Toko Bunga Kami</a>
+    </div>
+
+</body>
+</html>
